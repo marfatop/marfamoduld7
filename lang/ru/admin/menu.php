@@ -1,0 +1,4 @@
+<?php
+
+$MESS['MARFAMODULD7_MENU_TITLE'] = 'Меню';
+$MESS['MARFAMODULD7_SUBMENU_TITLE'] = 'Подменю';

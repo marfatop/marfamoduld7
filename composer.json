@@ -1,0 +1,24 @@
+{
+  "name": "marfa/modul.d7",
+  "description": "Заготовка модуля на d7, на основе которой можно разрабатывать свои решения",
+  "keywords": ["bitrix", "Битрикс", "d7", "модуль"],
+  "type": "bitrix-module",
+  "license": "MIT",
+  "support": {
+    "www": "http://marfa.ru",
+    "skype": "live:.cid.1129c443208d8f75",
+    "source": "http://github.com/solgor/modul.d7/"
+  },
+  "authors": [
+    {
+      "name": "Ткачев Максим",
+      "email": "tkachevm@ya.ru"
+    }
+  ],
+  "extra": {
+    "installer-name": "marfa"
+  },
+  "require": {
+    "composer/installers": ">=1.0.22 <2.0"
+  }
+}
