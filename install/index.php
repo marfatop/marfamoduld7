@@ -23,17 +23,11 @@ class bex_d7dull extends CModule
         }
         
         $this->MODULE_ID = 'marfamoduld7';
-        $this->MODULE_NAME = Loc::getMessage('BEX_D7DULL_MODULE_NAME');
-        $this->MODULE_DESCRIPTION = Loc::getMessage('BEX_D7DULL_MODULE_DESCRIPTION');
+        $this->MODULE_NAME = Loc::getMessage('MARFAMODULD7_MODULE_NAME');
+        $this->MODULE_DESCRIPTION = Loc::getMessage('MARFAMODULD7_MODULE_DESCRIPTION');
         $this->MODULE_GROUP_RIGHTS = 'N';
         $this->PARTNER_NAME = Loc::getMessage('MARFAMODULD7_MODULE_PARTNER_NAME');
         $this->PARTNER_URI = 'http://marfa.ru';
-    }
-
-    public function doInstall()
-    {
-        ModuleManager::registerModule($this->MODULE_ID);
-        $this->installDB();
     }
 
     public function doUninstall()
@@ -50,12 +44,5 @@ class bex_d7dull extends CModule
         }
     }
 
-    public function uninstallDB()
-    {
-        if (Loader::includeModule($this->MODULE_ID))
-        {
-            $connection = Application::getInstance()->getConnection();
-            $connection->dropTable(ExampleTable::getTableName());
-        }
-    }
+
 }
