@@ -26,7 +26,7 @@ class bex_d7dull extends CModule
         $this->MODULE_NAME = Loc::getMessage('MARFAMODULD7_MODULE_NAME');
         $this->MODULE_DESCRIPTION = Loc::getMessage('MARFAMODULD7_MODULE_DESCRIPTION');
         $this->MODULE_GROUP_RIGHTS = 'N';
-        $this->PARTNER_NAME = Loc::getMessage('MARFAMODULD7_MODULE_PARTNER_NAME');
+       // $this->PARTNER_NAME = Loc::getMessage('MARFAMODULD7_MODULE_PARTNER_NAME');
         $this->PARTNER_URI = 'http://marfa.ru';
     }
 
